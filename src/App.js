@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen font-sans text-gray-800">
       {/* Topo */}
-      <header className="bg-pink-200 p-6 text-center shadow-md">
+      <header className="bg-pink-400 p-6 text-center shadow-md">
         <h1 className="text-3xl font-bold">
           Patty Kelly Monteiro Nail Designer
         </h1>
