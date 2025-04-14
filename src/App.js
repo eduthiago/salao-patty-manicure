@@ -60,6 +60,12 @@ function App() {
               Serviços
             </button>
             <button
+              onClick={() => setSecaoAtiva("localização")}
+              className="hover:text-pink-500 font-medium"
+            >
+              Localização
+            </button>
+            <button
               onClick={() => setSecaoAtiva("agendamento")}
               className="hover:text-pink-500 font-medium"
             >
@@ -76,6 +82,11 @@ function App() {
                   Aqui você conhece meu trabalho , marca seu horário e efetua o
                   pagamento se desejar.
                 </p>
+              </section>
+            )}
+            {secaoAtiva === "localização" && (
+              <section id="localizacao" className="mb-12">
+                <h2 className="text-2xl font-semibold mb-2">Localização</h2>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234.6747304808487!2d-47.943656261387716!3d-19.763833299222725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bad11cc82236af%3A0xffd25d3acf6aefe6!2sPatty%20Kelly%20Monteiro%20Designer%20de%20Unhas!5e0!3m2!1spt-BR!2sbr!4v1744592638023!5m2!1spt-BR!2sbr"
                   width="600"
