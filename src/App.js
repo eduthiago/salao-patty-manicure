@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
-
+import { FaLocationDot } from "react-icons/fa6";
 function App() {
   const [secaoAtiva, setSecaoAtiva] = useState("home");
   const [nome, setNome] = useState("");
@@ -76,6 +76,16 @@ function App() {
                   Aqui você conhece meu trabalho , marca seu horário e efetua o
                   pagamento se desejar.
                 </p>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234.6747304808487!2d-47.943656261387716!3d-19.763833299222725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bad11cc82236af%3A0xffd25d3acf6aefe6!2sPatty%20Kelly%20Monteiro%20Designer%20de%20Unhas!5e0!3m2!1spt-BR!2sbr!4v1744592638023!5m2!1spt-BR!2sbr"
+                  width="600"
+                  height="450"
+                  style={{ border: "0" }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Patty Kelly Monteiro Nail Designer "
+                />
               </section>
             )}
 
@@ -170,6 +180,14 @@ function App() {
                 className="text-pink-600 hover:text-pink-800 transition-transform transform hover:scale-125"
               >
                 <FaInstagram />
+              </a>
+              <a
+                href="https://maps.app.goo.gl/XYyQisM3cck6uBAn9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-pink-600 hover:text-pink-800 transition-transform transform hover:scale-125"
+              >
+                <FaLocationDot />
               </a>
             </div>
           </footer>
