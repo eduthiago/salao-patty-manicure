@@ -40,7 +40,7 @@ function App() {
           </header>
 
           {/* Menu */}
-          <nav className="bg-white p-4 flex justify-center gap-8 shadow-sm">
+          <nav className="bg-white w-full p-4 flex justify-center gap-8 shadow-sm flex-wrap">
             <button
               onClick={() => setSecaoAtiva("home")}
               className="hover:text-pink-500 font-medium"
@@ -85,18 +85,27 @@ function App() {
               </section>
             )}
             {secaoAtiva === "localização" && (
-              <section id="localizacao" className="mb-12">
+              <section
+                id="localizacao"
+                className="mb-12 px-4 flex flex-col items-center text-cente"
+              >
                 <h2 className="text-2xl font-semibold mb-2">Localização</h2>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234.6747304808487!2d-47.943656261387716!3d-19.763833299222725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bad11cc82236af%3A0xffd25d3acf6aefe6!2sPatty%20Kelly%20Monteiro%20Designer%20de%20Unhas!5e0!3m2!1spt-BR!2sbr!4v1744592638023!5m2!1spt-BR!2sbr"
-                  width="600"
-                  height="450"
-                  style={{ border: "0" }}
+                  className="w-full h-full border-0"
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Patty Kelly Monteiro Nail Designer "
                 />
+                <a
+                  href="https://goo.gl/maps/Y2eJNgX58gRnfgib9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-block bg-pink-500 text-white px-6 py-2 rounded-full font-medium hover:bg-pink-600 transition duration-300 shadow-md"
+                >
+                  Ver no Google Maps
+                </a>
               </section>
             )}
 
