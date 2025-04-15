@@ -5,6 +5,7 @@ import { FaLocationDot } from "react-icons/fa6";
 function App() {
   const [secaoAtiva, setSecaoAtiva] = useState("home");
   const [nome, setNome] = useState("");
+  const [telefone, setTelefone] = useState("");
   const [data, setData] = useState("");
   const [hora, setHora] = useState("");
   const [servico, setServico] = useState("");
@@ -134,6 +135,14 @@ function App() {
                     placeholder="Seu nome"
                     value={nome}
                     onChange={(e) => setNome(e.target.value)}
+                    className="w-full border border-gray-300 p-2 rounded"
+                    required
+                  />
+                  <input
+                    type="text"
+                    placeholder="Seu telefone"
+                    value={telefone}
+                    onChange={(e) => setTelefone(e.target.value)}
                     className="w-full border border-gray-300 p-2 rounded"
                     required
                   />
