@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "./App.css";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+
 function App() {
   const [secaoAtiva, setSecaoAtiva] = useState("home");
   const [nome, setNome] = useState("");
@@ -138,14 +141,14 @@ function App() {
                     className="w-full border border-gray-300 p-2 rounded"
                     required
                   />
-                  <input
-                    type="text"
-                    placeholder="Seu telefone"
+                  <PhoneInput
+                    country={"br"}
                     value={telefone}
-                    onChange={(e) => setTelefone(e.target.value)}
-                    className="w-full border border-gray-300 p-2 rounded"
-                    required
+                    onChange={(phone) => setTelefone(phone)}
+                    inputStyle={{ width: "100%" }}
+                    containerStyle={{ marginBottom: "1rem" }}
                   />
+
                   <input
                     type="date"
                     value={data}
